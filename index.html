@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <--! favion--> 
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <title>Portfolio - Virtual Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background-color: #f8fafc;
+        color: #0f172a;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 min-h-screen">
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+        <!-- EDIT: NAVBAR_BRAND -->
+        <a href="#hero" class="font-bold text-lg text-blue-900 tracking-tight hover:text-blue-700 transition-colors"> FCB Portfolio </a>
+        <nav class="flex items-center gap-4 sm:gap-6 text-sm font-medium text-slate-600">
+          <a href="#about" class="hover:text-blue-600 transition-colors">About</a>
+          <a href="#projects" class="hover:text-blue-600 transition-colors">Projects</a>
+          <a href="#skills" class="hover:text-blue-600 transition-colors">Skills/Tools</a>
+          <a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-16 sm:space-y-24">
+      <!-- Hero / Profile Section -->
+      <section id="hero" class="pt-4 pb-2">
+        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-8 sm:gap-12 text-center sm:text-left">
+          <!-- Profile Image -->
+          <!-- EDIT: PROFILE_IMAGE -->
+          <div class="w-40 h-40 sm:w-48 sm:h-48 rounded-2xl overflow-hidden border-2 border-blue-100 shadow-md bg-white flex-shrink-0">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzWCzRiN3SLNh9n4ohnKtmjQ0xCy3kbE9g2x7BVysb0Od_M_ABoTEgc0styA4kpUf4WJlSB593BFnShjyreg0Jo3vUqVVVYB1mf15Yh-jUtDElYnI7jsdu4C7KXGUWk2IsHY9ru_jxMTbAghQIf5tzcrzHm6zcGBcRnCoRMaQ6vun1jJPjypjF77iK_2uc3pcGnMGdNDKlW9Rv7KRApzN-9d4hni2-6vEe-xfzQv2OGrvkmJqZkQI" alt="Your Name" class="w-full h-full object-cover">
+          </div>
+          <!-- Hero Content -->
+          <div class="flex-1 space-y-4">
+            <!-- EDIT: YOUR_NAME --> 
+            <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Marsha Vidallo</h1>
+            <!-- EDIT: YOUR_JOB_TITLE --> 
+            <h2 class="text-xl sm:text-2xl font-semibold text-blue-700">Virtual Assistant</h2>
+            <!-- EDIT: SHORT_INTRODUCTION --> 
+            <p class="text-slate-600 text-base leading-relaxed max-w-xl"> Virtual Assistant providing administrative support, email management, data entry, online research, customer service, and workflow automation for busy professionals. </p>
+            <!-- Action Buttons / Links as shown in wireframe -->
+            <div class="pt-2 flex flex-wrap justify-center sm:justify-start gap-3">
+              <a href="#projects" class="px-5 py-2.5 rounded-lg bg-blue-600 text-white font-medium text-sm shadow hover:bg-blue-700 transition-colors"> View My Projects </a>
+              <a href="#contact" class="px-5 py-2.5 rounded-lg border border-slate-300 bg-white text-slate-700 font-medium text-sm shadow-sm hover:bg-slate-50 hover:text-blue-600 transition-colors"> Contact Me </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Me Section -->
+      <section id="about" class="space-y-6">
+        <h2 class="text-2xl font-bold text-slate-900 tracking-tight text-center sm:text-left border-b border-slate-200 pb-3"> About Me </h2>
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-blue-100 shadow-sm">
+          <!-- EDIT: ABOUT_YOU -->
+          <p class="text-slate-600 leading-relaxed text-base"> 
+
+I’m a detail-oriented Virtual Assistant who helps businesses and busy professionals manage daily administrative tasks, organize workflows, and stay focused on their priorities. My skills and professional interests include email management, data entry, online research, calendar scheduling, document organization, and customer support. I’m also interested in AI tools and workflow automation to help simplify repetitive tasks and improve productivity. My goal is to provide reliable virtual assistance, organized processes, and efficient support that helps clients manage their workload and focus on growing their business.
+</p>
+        </div>
+      </section>
+      <!-- Projects Section -->
+      <section id="projects" class="space-y-6">
+        <h2 class="text-2xl font-bold text-slate-900 tracking-tight text-center sm:text-left border-b border-slate-200 pb-3"> Projects </h2>
+        <!-- 3 Project Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Project Card 1 -->
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col hover:border-blue-300 transition-colors">
+            <!-- EDIT: PROJECT_IMAGE_1 -->
+            <div class="w-full h-44 overflow-hidden bg-slate-100 border-b border-slate-100">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY-_A36ELi-BCrWFDTrQt8eGIdxycyNoXc2t_vNgZoBORdlh0ZVImJYnrkzk3oymL0gtEnJeHZxzxNuHmydXwgVl3s5AnNlVnvI1s4Z06AedyOOYmheAb81jT0Gw1Pn_wI4qv23OTdYbn6JbQvNTgr59SiOsM2MewF9lFIB0wlySSX3RFTvyRNJPIpn17L1YIUaQ4cRp3m0SkW_ATCStMlRnnDAW3xCipuo3ZO21PaFj7gFiuLlQA" alt="Project Title" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+              <div class="space-y-2">
+                <!-- EDIT: PROJECT_TITLE_1 -->
+                <h3 class="font-bold text-lg text-slate-900">Landing Page and Inquiry Tracking</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION_1 -->
+                <p class="text-slate-600 text-sm leading-relaxed">Create a simple landing page that presents business services, collects customer inquiries, and directs visitors to an existing website for orders or bookings. Use form tools and Google Sheets to organize leads and track inquiries for better customer follow-up.</p>
+              </div>
+              <!-- EDIT: PROJECT_LINK_1 -->
+              <a href="#" class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors pt-2"> Project Link &rarr; </a>
+            </div>
+          </div>
+          <!-- Project Card 2 -->
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col hover:border-blue-300 transition-colors">
+            <!-- EDIT: PROJECT_IMAGE_2 -->
+            <div class="w-full h-44 overflow-hidden bg-slate-100 border-b border-slate-100">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROC5B2GwPsJKajtPAUfabl4JQgIyx-HaJA1Ee7kN98SA&s=10" alt="Project Title" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+              <div class="space-y-2">
+                <!-- EDIT: PROJECT_TITLE_2 -->
+                <h3 class="font-bold text-lg text-slate-900">Email and Calendar Scheduling</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION_2 -->
+                <p class="text-slate-600 text-sm leading-relaxed">Develop an email and calendar management system to organize appointments, schedule meetings, and send follow-up reminders. Use Google Calendar, Gmail, and productivity tools to reduce missed appointments and keep daily administrative tasks organized</p>
+              </div>
+              <!-- EDIT: PROJECT_LINK_2 -->
+              <a href="#" class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors pt-2"> Project Link &rarr; </a>
+            </div>
+          </div>
+          <!-- Project Card 3 -->
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col hover:border-blue-300 transition-colors">
+            <!-- EDIT: PROJECT_IMAGE_3 -->
+            <div class="w-full h-44 overflow-hidden bg-slate-100 border-b border-slate-100">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIvKaokOe46FjFDENA6QOZJECr5DuRhmAMfud-N_kEGA&s=10" alt="Project Title" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+              <div class="space-y-2">
+                <!-- EDIT: PROJECT_TITLE_3 -->
+                <h3 class="font-bold text-lg text-slate-900">Billing and Payment Reminder Automation</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION_3 -->
+                <p class="text-slate-600 text-sm leading-relaxed">Design a billing tracker using Google Sheets to monitor invoices, due dates, payment status, and outstanding balances. Use email automation tools such as Make to send timely payment reminders, helping businesses streamline accounts receivable follow-ups and maintain organized records.</p>
+              </div>
+              <!-- EDIT: PROJECT_LINK_3 -->
+              <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaxlIXofi2yLjT9Sh7Curf-XJsLwQwL1VBlBpiUoRQ3Q&s=10" class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors pt-2"> Project Link &rarr; </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skills and Tools Section -->
+      <section id="skills" class="space-y-6">
+        <h2 class="text-2xl font-bold text-slate-900 tracking-tight text-center sm:text-left border-b border-slate-200 pb-3"> Skills and Tools </h2>
+        <!-- Exactly 2 Cards: Skills and Tools / Technologies -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <!-- Card 1: Skills -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+            <!-- EDIT: SKILLS_HEADING -->
+            <h3 class="font-bold text-lg text-blue-900 mb-4 pb-2 border-b border-slate-100">Skills</h3>
+            <ul class="space-y-2.5 text-slate-600 text-sm list-disc list-inside">
+              <!-- EDIT: SKILL_ITEMS -->
+              <li>Workflow Automation and Process Improvement</li>
+              <li>Administrative Support and Office Management</li>
+              <li>Email and Calendar Management</li>
+            </ul>
+          </div>
+          <!-- Card 2: Tools / Technologies -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+            <!-- EDIT: TOOLS_HEADING -->
+            <h3 class="font-bold text-lg text-blue-900 mb-4 pb-2 border-b border-slate-100">Tools / Technologies</h3>
+            <ul class="space-y-2.5 text-slate-600 text-sm list-disc list-inside">
+              <!-- EDIT: TOOL_ITEMS -->
+              <li>Make (Integromat)</li>
+              <li>QuickBooks Online</li>
+              <li>Google Workspace</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Contacts Section -->
+      <section id="contact" class="space-y-6 pb-12">
+        <h2 class="text-2xl font-bold text-slate-900 tracking-tight text-center sm:text-left border-b border-slate-200 pb-3"> Contacts </h2>
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-blue-100 shadow-sm space-y-4 text-center sm:text-left">
+          <!-- EDIT: YOUR_EMAIL -->
+          <p class="text-slate-700 text-base">
+            <span class="font-semibold text-slate-900">Email:</span> vidallomarsha@gmail.com
+          </p>
+          <!-- EDIT: YOUR_CONTACT_INFORMATION -->
+          <p class="text-slate-700 text-base">
+            <span class="font-semibold text-slate-900">Contact No:</span> 09517275070
+          </p>
+          <!-- EDIT: YOUR_SOCIAL_LINK -->
+          <div class="pt-2">
+            <a href="https://www.linkedin.com/in/marsha-vidallo-868716262/?isSelfProfile=true" class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors"> Your Social Link &rarr; </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white py-6 text-center text-xs text-slate-400">
+      <p>&copy; Portfolio. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
